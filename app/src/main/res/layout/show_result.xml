@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="1.Which brand of phone will you choose if you are going to buy a new one?"
+        />
+    <TextView
+        android:id="@+id/answer_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No answer!"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="2.How much does your phone cost?"
+        />
+    <TextView
+        android:id="@+id/answer_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No answer!"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="3.What kind of phone are you using?"
+        />
+    <TextView
+        android:id="@+id/answer_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No answer!"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="4.What functions does your phone have now?"
+        />
+    <TextView
+        android:id="@+id/answer_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No answer!"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="5.What functions are the most often used?"
+        />
+    <TextView
+        android:id="@+id/answer_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No answer!"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="6.What function do you expect your phone to have in the future?"
+        />
+    <TextView
+        android:id="@+id/answer_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No answer!"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="7.In which condition will you buy a new phone?"
+        />
+    <TextView
+        android:id="@+id/answer_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No answer!"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="8.Which brand of phone will you choose if you are going to buy a new one?"
+        />
+    <TextView
+        android:id="@+id/answer_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No answer!"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="9.What characteristic do you think is most important to evaluate a phone?"
+        />
+    <TextView
+        android:id="@+id/answer_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No answer!"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="10.How old are you?"
+        />
+    <TextView
+        android:id="@+id/answer_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No answer!"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="11.What's your gender?"
+        />
+    <TextView
+        android:id="@+id/answer_11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No answer!"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="12.How much money do you earn per month?"
+        />
+    <TextView
+        android:id="@+id/answer_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No answer!"
+        />
+</LinearLayout>

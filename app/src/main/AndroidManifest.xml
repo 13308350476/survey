@@ -9,6 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".FinishActivity"></activity>
+        <activity android:name=".Show_ResultActivity" />
+        <activity android:name=".Question_TwelveActivity" />
+        <activity android:name=".Question_ElevenActivity" />
+        <activity android:name=".Question_TenActivity" />
+        <activity android:name=".Question_NineActivity" />
+        <activity android:name=".Question_EightActivity" />
+        <activity android:name=".Question_SevenActivity" />
+        <activity android:name=".Question_SixActivity" />
+        <activity android:name=".Question_FiveActivity" />
+        <activity android:name=".Question_FourActivity" />
+        <activity android:name=".Question_ThreeActivity" />
+        <activity android:name=".Question_TwoActivity" />
+        <activity android:name=".Question_OneActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
