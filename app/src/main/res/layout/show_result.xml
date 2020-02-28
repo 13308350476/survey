@@ -7,6 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
+        android:textSize="10dp"
         android:text="1.Which brand of phone will you choose if you are going to buy a new one?"
         />
     <TextView
@@ -14,11 +15,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No answer!"
+        android:textSize="10dp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
+        android:textSize="10dp"
         android:text="2.How much does your phone cost?"
         />
     <TextView
@@ -26,125 +29,161 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No answer!"
+        android:textSize="10dp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:text="3.What kind of phone are you using?"
+        android:textSize="10dp"
         />
     <TextView
         android:id="@+id/answer_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No answer!"
+        android:textSize="10dp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:text="4.What functions does your phone have now?"
+        android:textSize="10dp"
+
         />
     <TextView
         android:id="@+id/answer_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No answer!"
+        android:textSize="10dp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:text="5.What functions are the most often used?"
+        android:textSize="10dp"
         />
     <TextView
         android:id="@+id/answer_5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No answer!"
+        android:textSize="10dp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:text="6.What function do you expect your phone to have in the future?"
+        android:textSize="10dp"
         />
     <TextView
         android:id="@+id/answer_6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No answer!"
+        android:textSize="10dp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:text="7.In which condition will you buy a new phone?"
+        android:textSize="10dp"
         />
     <TextView
         android:id="@+id/answer_7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No answer!"
+        android:textSize="10dp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:text="8.Which brand of phone will you choose if you are going to buy a new one?"
+        android:textSize="10dp"
         />
     <TextView
         android:id="@+id/answer_8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No answer!"
+        android:textSize="10dp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:text="9.What characteristic do you think is most important to evaluate a phone?"
+        android:textSize="10dp"
         />
     <TextView
         android:id="@+id/answer_9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No answer!"
+        android:textSize="10dp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:text="10.How old are you?"
+        android:textSize="10dp"
         />
     <TextView
         android:id="@+id/answer_10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No answer!"
+        android:textSize="10dp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:text="11.What's your gender?"
+        android:textSize="10dp"
         />
     <TextView
         android:id="@+id/answer_11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No answer!"
+        android:textSize="10dp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:text="12.How much money do you earn per month?"
+        android:textSize="10dp"
         />
     <TextView
         android:id="@+id/answer_12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="No answer!"
+        android:textSize="10dp"
         />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/save"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Save"
+            android:background="#39BD3E"
+            android:onClick="question_three"
+            ></Button>
+    </RelativeLayout>
 </LinearLayout>

@@ -83,7 +83,9 @@ public class Question_FiveActivity extends AppCompatActivity {
             }
         }
         answer = rgp5_string;
-        Intent intent = new Intent(this, Question_SixActivity.class);
-        startActivity(intent);
+        if(rgp5_string!="NONE") {
+            Intent intent = new Intent(this, Question_SixActivity.class);
+            startActivity(intent);
+        }
     }
 }

@@ -30,6 +30,7 @@ public class Question_FourActivity extends AppCompatActivity {
         rgp4_6 = (CheckBox) findViewById(R.id.grp4_6);
         rgp4_7 = (CheckBox) findViewById(R.id.grp4_7);
     }
+
     public void question_four(View view){
         if(rgp4_1.isChecked()){
             rgp4_string=rgp4_1.getText().toString();
@@ -83,7 +84,9 @@ public class Question_FourActivity extends AppCompatActivity {
             }
         }
         answer = rgp4_string;
-        Intent intent = new Intent(this, Question_FiveActivity.class);
-        startActivity(intent);
+        if(rgp4_string!="NONE") {
+            Intent intent = new Intent(this, Question_FiveActivity.class);
+            startActivity(intent);
+        }
     }
 }
