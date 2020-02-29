@@ -81,7 +81,7 @@ public class Show_ResultActivity extends AppCompatActivity {
     private  void save_file(String msg) {
         //I/O
         //get SDcard
-        File sdFile = Environment.getExternalStorageDirectory();
+        File sdFile = getExternalFilesDir(null);
         File saveData = new File(sdFile, "savedata.txt");
         try {
             FileOutputStream fout=new FileOutputStream(saveData);
