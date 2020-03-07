@@ -24,4 +24,5 @@ public class Question_SixActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Question_SevenActivity.class);
         startActivity(intent);
     }
+
 }

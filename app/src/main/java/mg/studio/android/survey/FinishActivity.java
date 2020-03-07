@@ -15,7 +15,7 @@ public class FinishActivity extends AppCompatActivity {
     }
 
     public void finish(View view){
-        setContentView(R.layout.finish_survey);
+
         Intent intent = new Intent(this, Show_ResultActivity.class);
         startActivity(intent);
     }

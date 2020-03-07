@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void welcome(View view) {
         if (radioButton.isChecked()) {
-            Intent intent = new Intent(this, Question_OneActivity.class);
+            Intent intent = new Intent(this,Question_OneActivity.class);
             startActivity(intent);
         }
     }
