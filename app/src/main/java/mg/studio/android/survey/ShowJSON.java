@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,13 +24,23 @@ import java.io.InputStreamReader;
 public class ShowJSON extends AppCompatActivity {
 
     int flag=0;     //Used to determine how many questions to answer
+    int flag1=0;
     int[] questionnum=new int[100];  //Used to determine that there are several options in this question to limit the user's answers
     String [][]answer=new String[100][100]; //Holds options read from a file
     String []type=new String[100];  //Type of storage question
     String []question=new String[100];  //store questions
 
     TextView showquestion;
-    EditText et_choose;
+    RadioButton bt_1;
+    RadioButton bt_2;
+    RadioButton bt_3;
+    RadioButton bt_4;
+    RadioButton bt_5;
+    RadioButton bt_6;
+    RadioButton bt_7;
+    RadioButton bt_8;
+    RadioButton bt_9;
+    RadioButton bt_10;
     Button bt_choose;
     TextView tv_show_answer;
 
@@ -38,7 +49,16 @@ public class ShowJSON extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.show_json);
-        et_choose = (EditText)findViewById(R.id.et_choose) ;
+        bt_1=(RadioButton)findViewById(R.id.choose_1);
+        bt_2=(RadioButton)findViewById(R.id.choose_2);
+        bt_3=(RadioButton)findViewById(R.id.choose_3);
+        bt_4=(RadioButton)findViewById(R.id.choose_4);
+        bt_5=(RadioButton)findViewById(R.id.choose_5);
+        bt_6=(RadioButton)findViewById(R.id.choose_6);
+        bt_7=(RadioButton)findViewById(R.id.choose_7);
+        bt_8=(RadioButton)findViewById(R.id.choose_8);
+        bt_9=(RadioButton)findViewById(R.id.choose_9);
+        bt_10=(RadioButton)findViewById(R.id.choose_10);
         bt_choose=(Button)findViewById(R.id.bt_choose) ;
         showquestion=(TextView)findViewById(R.id.tv_show_json);
         tv_show_answer = (TextView)findViewById(R.id.tv_show_answer);
@@ -82,26 +102,167 @@ public class ShowJSON extends AppCompatActivity {
                 result+=answer[i][j]+"\n";
             }
         }
-        showquestion.setText(result);
-        if(question[flag]== null){
-            bt_choose.setText("save answer");
-        }
     }
+
         //click choose
     public void choose(View view){
-        String str = et_choose.getText().toString();
         if(question[flag]!=null) {
-            if (Integer.parseInt(str) <= questionnum[flag] && Integer.parseInt(str) > 0) {
-                flag+=1;
-                et_choose.setHint("please answer question " + (flag+1));
-                save_data += "question" + flag + ":" + answer[flag - 1][Integer.parseInt(str) - 1] + "\n";
-                tv_show_answer.setText(save_data);
-            } else {
-                Toast.makeText(ShowJSON.this, "Please enter the correct option", Toast.LENGTH_SHORT).show();
+            if(flag1==0){
+                for(int i=0;answer[flag][i]!=null;i++){
+                    String temp;
+                    temp="bt_"+(i+1);
+                    switch (temp){
+                        case "bt_1":
+                            bt_1.setText(answer[0][i]);
+                            bt_1.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_2":
+                            bt_2.setText(answer[0][i]);
+                            bt_2.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_3":
+                            bt_3.setText(answer[0][i]);
+                            bt_3.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_4":
+                            bt_4.setText(answer[0][i]);
+                            bt_4.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_5":
+                            bt_5.setText(answer[0][i]);
+                            bt_5.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_6":
+                            bt_6.setText(answer[0][i]);
+                            bt_6.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_7":
+                            bt_7.setText(answer[0][i]);
+                            bt_7.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_8":
+                            bt_8.setText(answer[0][i]);
+                            bt_8.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_9":
+                            bt_9.setText(answer[0][i]);
+                            bt_9.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_10":
+                            bt_10.setText(answer[0][i]);
+                            bt_10.setVisibility(View.VISIBLE);
+                            break;
+                    }
+                }
+                showquestion.setText(question[0]);
+                bt_choose.setText("CHOOSE");
+                flag1=1;
+            }
+            else {
+                if(bt_1.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_1.getText().toString() + "\n";
+                    tv_show_answer.setText(save_data);
+                }
+                if(bt_2.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_2.getText().toString() + "\n";
+                    tv_show_answer.setText(save_data);
+                }
+                if(bt_3.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_3.getText().toString() + "\n";
+                    tv_show_answer.setText(save_data);
+                }
+                if(bt_4.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_4.getText().toString() + "\n";
+                    tv_show_answer.setText(save_data);
+                }
+                if(bt_5.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_5.getText().toString() + "\n";
+                    tv_show_answer.setText(save_data);
+                }
+                if(bt_6.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_6.getText().toString() + "\n";
+                    tv_show_answer.setText(save_data);
+                }
+                if(bt_7.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_7.getText().toString() + "\n";
+                    tv_show_answer.setText(save_data);
+                }
+                if(bt_8.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_8.getText().toString() + "\n";
+                    tv_show_answer.setText(save_data);
+                }
+                if(bt_9.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_9.getText().toString() + "\n";
+                    tv_show_answer.setText(save_data);
+                }
+                if(bt_10.isChecked()){
+                    flag+=1;
+                    save_data += "question" + flag + ":" + bt_10.getText().toString() + "\n";
+                    tv_show_answer.setText(save_data);
+                }
+                showquestion.setText(question[flag]);
+                for(int i=0;answer[flag][i]!=null;i++){
+                    String temp;
+                    temp="bt_"+(i+1);
+                    switch (temp){
+                        case "bt_1":
+                            bt_1.setText(answer[flag][i]);
+                            bt_1.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_2":
+                            bt_2.setText(answer[flag][i]);
+                            bt_2.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_3":
+                            bt_3.setText(answer[flag][i]);
+                            bt_3.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_4":
+                            bt_4.setText(answer[flag][i]);
+                            bt_4.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_5":
+                            bt_5.setText(answer[flag][i]);
+                            bt_5.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_6":
+                            bt_6.setText(answer[flag][i]);
+                            bt_6.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_7":
+                            bt_7.setText(answer[flag][i]);
+                            bt_7.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_8":
+                            bt_8.setText(answer[flag][i]);
+                            bt_8.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_9":
+                            bt_9.setText(answer[flag][i]);
+                            bt_9.setVisibility(View.VISIBLE);
+                            break;
+                        case "bt_10":
+                            bt_10.setText(answer[flag][i]);
+                            bt_10.setVisibility(View.VISIBLE);
+                            break;
+                    }
+                }
+            }
+            if(question[flag]== null){
+                bt_choose.setText("save answer");
             }
         }else{
             //After answering the question, it will automatically become to save
-            bt_choose.setText("save answer");
+            Toast.makeText(ShowJSON.this,"saving",Toast.LENGTH_SHORT).show();
             save_answer(save_data);
         }
     }

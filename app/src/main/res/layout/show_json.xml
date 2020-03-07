@@ -15,14 +15,74 @@
             android:id="@+id/tv_show_json"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="nothing"
+            android:hint="question"
             ></TextView>
-        <EditText
-            android:id="@+id/et_choose"
-            android:layout_width="320dp"
-            android:layout_height="60dp"
-            android:hint="please answer the question1"
-            ></EditText>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:checked="true"
+                android:id="@+id/choose_1"
+                ></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/choose_2"
+                ></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/choose_3"
+                ></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/choose_4"
+                ></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/choose_5"
+                ></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/choose_6"
+                ></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/choose_7"
+                ></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/choose_8"
+                ></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/choose_9"
+                ></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/choose_10"
+                ></RadioButton>
+
+        </RadioGroup>
         <TextView
             android:id="@+id/tv_show_answer"
             android:layout_width="wrap_content"
@@ -39,7 +99,7 @@
                 android:layout_height="60dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:text="choose"
+                android:text="Click to start"
                 android:onClick="choose"
                 android:background="#39BD3E"
                 ></Button>
