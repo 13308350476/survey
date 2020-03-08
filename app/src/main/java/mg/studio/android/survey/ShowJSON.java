@@ -64,8 +64,11 @@ public class ShowJSON extends AppCompatActivity {
         tv_show_answer = (TextView)findViewById(R.id.tv_show_answer);
 
         //You can put the JSON class to str and it will automatically store it for you in the sample.json file
+        // (Please comment out this paragraph if you put it directly into the file)
         String str="{\"survey\":{\"id\":\"12344134\",\"len\":\"2\",\"questions\":[{\"type\":\"single\",\"question\":\"How well do the professors teach at this university?\",\"options\":[{\"1\":\"Extremely well\"},{\"2\":\"Very well\"}]},{\"type\":\"single\",\"question\":\"How effective is the teaching outside yur major at the univesrity?\",\"options\":[{\"1\":\"Extremetly effective\"},{\"2\":\"Very effective\"},{\"3\":\"Somewhat effective\"},{\"4\":\"Not so effective\"},{\"5\":\"Not at all effective\"}]}]}}";
         save_file(str);
+
+        //Extract from file
         String show_json;
         String PATH=getExternalFilesDir(null)+"/sample.json";
         show_json=getFileFromeSD(PATH);
@@ -209,6 +212,16 @@ public class ShowJSON extends AppCompatActivity {
                     save_data += "question" + flag + ":" + bt_10.getText().toString() + "\n";
                     tv_show_answer.setText(save_data);
                 }
+                bt_1.setVisibility(View.INVISIBLE);
+                bt_2.setVisibility(View.INVISIBLE);
+                bt_3.setVisibility(View.INVISIBLE);
+                bt_4.setVisibility(View.INVISIBLE);
+                bt_5.setVisibility(View.INVISIBLE);
+                bt_6.setVisibility(View.INVISIBLE);
+                bt_7.setVisibility(View.INVISIBLE);
+                bt_8.setVisibility(View.INVISIBLE);
+                bt_9.setVisibility(View.INVISIBLE);
+                bt_10.setVisibility(View.INVISIBLE);
                 showquestion.setText(question[flag]);
                 for(int i=0;answer[flag][i]!=null;i++){
                     String temp;
