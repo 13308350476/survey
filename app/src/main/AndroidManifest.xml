@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="mg.studio.android.survey">
+    package="com.qin.imagezxlingdemo">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/start"
+        android:label="survey"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ShowJSON"></activity>
-        <activity android:name=".FinishActivity" />
-        <activity android:name=".Show_ResultActivity" />
-        <activity android:name=".Question_TwelveActivity" />
-        <activity android:name=".Question_ElevenActivity" />
-        <activity android:name=".Question_TenActivity" />
-        <activity android:name=".Question_NineActivity" />
-        <activity android:name=".Question_EightActivity" />
-        <activity android:name=".Question_SevenActivity" />
-        <activity android:name=".Question_SixActivity" />
-        <activity android:name=".Question_FiveActivity" />
-        <activity android:name=".Question_FourActivity" />
-        <activity android:name=".Question_ThreeActivity" />
-        <activity android:name=".Question_TwoActivity" />
-        <activity android:name=".Question_OneActivity" />
+        <activity android:name=".UnlockView"></activity>
+        <activity android:name=".Report" />
+        <activity android:name=".Show_json" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SActivity" />
+        <activity android:name=".Question_one" />
+        <activity android:name=".UnLock" />
+        <activity android:name=".TimeActivity" />
+        <activity
+            android:name="com.king.zxing.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".EasyCaptureActivity" />
     </application>
 
 </manifest>
